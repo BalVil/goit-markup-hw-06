@@ -474,13 +474,11 @@
             <label for="subscribe" class="subscribe-label"
               >подпишитесь на рассылку</label
             >
-            <!-- <span class="form-label"></span> -->
             <input
               type="text"
               name="subscribe"
               id="subscribe"
               placeholder="E-mail"
-              autofocus
               class="subscribe-input"
             />
           </div>
@@ -534,13 +532,22 @@
             ></textarea>
           </div>
           <div class="form-checkbox">
-            <input type="checkbox" name="terms" id="terms" />
-            <svg class="icon-form" width="16" height="15">
-              <use href="./images/sprite.svg#check"></use>
-            </svg>
-            <label for="terms" class="terms-form"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="" class="terms-link">Условия договора</a></label
+            <label class="terms-form">
+              <input
+                type="checkbox"
+                name="terms"
+                class="checkbox visually-hidden"
+              />
+              <span class="icon-checkbox">
+                <svg>
+                  <use href="./images/sprite.svg#check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю&nbsp;<a
+                href=""
+                class="terms-link"
+                >Условия договора</a
+              ></label
             >
           </div>
           <button type="submit" class="button">Отправить</button>
